@@ -12,6 +12,7 @@
 		C19371BB22B0D1A00017E696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19371B922B0D1A00017E696 /* Main.storyboard */; };
 		C19371BD22B0D1A20017E696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19371BC22B0D1A20017E696 /* Assets.xcassets */; };
 		C19371C022B0D1A20017E696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19371BE22B0D1A20017E696 /* LaunchScreen.storyboard */; };
+		C19371C922B0D85F0017E696 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19371C822B0D85F0017E696 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C19371BC22B0D1A20017E696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C19371BF22B0D1A20017E696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C19371C122B0D1A20017E696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19371C822B0D85F0017E696 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		C19371B422B0D1A00017E696 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				C19371C722B0D8110017E696 /* Controller */,
 				C19371B522B0D1A00017E696 /* AppDelegate.swift */,
-				C19371B722B0D1A00017E696 /* ViewController.swift */,
 				C19371B922B0D1A00017E696 /* Main.storyboard */,
 				C19371BC22B0D1A20017E696 /* Assets.xcassets */,
 				C19371BE22B0D1A20017E696 /* LaunchScreen.storyboard */,
 				C19371C122B0D1A20017E696 /* Info.plist */,
 			);
 			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		C19371C722B0D8110017E696 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C19371C822B0D85F0017E696 /* LoginController.swift */,
+				C19371B722B0D1A00017E696 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19371B822B0D1A00017E696 /* ViewController.swift in Sources */,
+				C19371C922B0D85F0017E696 /* LoginController.swift in Sources */,
 				C19371B622B0D1A00017E696 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UG4LAMEK9;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UG4LAMEK9;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
